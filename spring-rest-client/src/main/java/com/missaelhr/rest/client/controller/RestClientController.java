@@ -40,7 +40,7 @@ public class RestClientController {
 		// Send the request as GET
 		try {
 			ResponseEntity<PersonList> result = 
-					restTemplate.exchange("http://localhost:8080/spring-rest-server/inmuebles/listar",
+					restTemplate.exchange("http://localhost:8080/spring-rest-server/inmuebles/listar", //Llamada a la direccion del servidor rest donde proviene JSON
 							HttpMethod.GET, entity, PersonList.class);
 			// Add to model
 			model.addAttribute("persons", result.getBody().getData());
@@ -69,7 +69,7 @@ public class RestClientController {
 		// Send the request as GET
 		try {
 			ResponseEntity<PersonList> result = 
-					restTemplate.exchange("http://localhost:8080/spring-rest-server/agenda/listar",
+					restTemplate.exchange("http://localhost:8080/spring-rest-server/agenda/listar", //Llamada a la direccion del servidor rest donde proviene JSON
 							HttpMethod.GET, entity, PersonList.class);
 			// Add to model
 			model.addAttribute("persons", result.getBody().getData());
