@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Calling external action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: '/MissaelHRC/test-github-actions/.github/workflows/public-github-action.yml@main'
