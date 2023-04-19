@@ -1,0 +1,10 @@
+name: Contrast Security App Workflow
+
+on: workflow_dispatch:
+
+jobs:
+  fingerprint_repo:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Calling external action
+        uses: '/MissaelHRC/test-github-actions/.github/workflows/public-github-action.yml@main'
