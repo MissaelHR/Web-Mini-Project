@@ -6,7 +6,7 @@ jobs:
   fingerprint_repo:
     runs-on: ubuntu-22.04
     steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
       - name: Calling external action
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: '/MissaelHRC/test-github-actions/.github/workflows/public-github-action.yml@main'
+        uses: MissaelHRC/test-github-actions/.github/workflows/public-github-action.yml@main
