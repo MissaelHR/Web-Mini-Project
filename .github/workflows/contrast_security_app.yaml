@@ -1,6 +1,6 @@
 name: Contrast Security App Workflow
 
-on: workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   fingerprint_repo:
