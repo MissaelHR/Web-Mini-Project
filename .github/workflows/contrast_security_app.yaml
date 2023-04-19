@@ -4,9 +4,4 @@ on: workflow_dispatch
 
 jobs:
   fingerprint_repo:
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Clone repository
-        uses: actions/checkout@v3
-      - name: Calling external action
-        uses: MissaelHRC/test-github-actions/.github/workflows/public-github-action.yml@main
+    uses: MissaelHRC/test-github-actions/.github/workflows/public-github-action.yml@main
